@@ -15,6 +15,7 @@ public interface AdaTypes {
   IElementType CRLF = new AdaTokenType("CRLF");
   IElementType IDENTIFIER = new AdaTokenType("IDENTIFIER");
   IElementType KEYWORD = new AdaTokenType("KEYWORD");
+  IElementType NUMERIC_LITERAL = new AdaTokenType("NUMERIC_LITERAL");
   IElementType OTHER = new AdaTokenType("OTHER");
   IElementType STRING_LITERAL = new AdaTokenType("STRING_LITERAL");
 
