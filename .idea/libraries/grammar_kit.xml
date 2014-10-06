@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="grammar-kit">
+    <CLASSES>
+      <root url="jar://$APPLICATION_PLUGINS_DIR$/GrammarKit/lib/grammar-kit.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

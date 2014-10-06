@@ -1,0 +1,20 @@
+
+{
+  parserClass="com.nraynaud.ada.psi.AdaParser"
+  parserUtilClass="org.intellij.grammar.parser.GeneratedParserUtilBase"
+  extends="com.intellij.extapi.psi.ASTWrapperPsiElement"
+
+  psiClassPrefix="Ada"
+  psiImplClassSuffix="Impl"
+  psiPackage="com.nraynaud.ada.psi"
+  psiImplPackage="com.nraynaud.ada.psi.impl"
+
+  elementTypeHolderClass="com.nraynaud.ada.psi.AdaTypes"
+  elementTypeClass="com.nraynaud.ada.psi.AdaElementType"
+  tokenTypeClass="com.nraynaud.ada.psi.AdaTokenType"
+}
+
+packageSpec ::= item_*
+
+private item_ ::= (text|COMMENT|CRLF)
+text ::= (KEYWORD|IDENTIFIER|OTHER)

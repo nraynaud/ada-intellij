@@ -1,0 +1,43 @@
+<idea-plugin version="2">
+    <id>com.nraynaud.ada.plugin</id>
+    <name>Ada language</name>
+    <version>1.0</version>
+    <vendor email="nraynaud@gmail.com" url="https://github.com/nraynaud">Nicolas Raynaud</vendor>
+
+    <description><![CDATA[
+      Ada language plugin<br>
+      Very basic at the moment.
+    ]]></description>
+
+    <change-notes><![CDATA[
+      Initial release.
+      Only colors keywords and comments.
+    ]]>
+    </change-notes>
+
+    <!-- please see http://confluence.jetbrains.com/display/IDEADEV/Build+Number+Ranges for description -->
+    <idea-version since-build="133"/>
+
+    <!-- please see http://confluence.jetbrains.com/display/IDEADEV/Plugin+Compatibility+with+IntelliJ+Platform+Products
+         on how to target different products -->
+    <depends>com.intellij.modules.lang</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <fileTypeFactory implementation="com.nraynaud.ada.AdaFileTypeFactory"/>
+        <lang.parserDefinition language="Ada" implementationClass="com.nraynaud.ada.AdaParserDefinition"/>
+        <lang.syntaxHighlighterFactory key="Ada" implementationClass="com.nraynaud.ada.AdaSyntaxHighlighterFactory"/>
+    </extensions>
+
+    <application-components>
+        <!-- Add your application components here -->
+    </application-components>
+
+    <project-components>
+        <!-- Add your project components here -->
+    </project-components>
+
+    <actions>
+        <!-- Add your actions here -->
+    </actions>
+
+</idea-plugin>
