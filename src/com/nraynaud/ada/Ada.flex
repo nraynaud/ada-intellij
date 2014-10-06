@@ -13,13 +13,6 @@ import com.nraynaud.ada.psi.AdaTypes;
 %eof{  return;
 %eof}
 DIGIT = [0-9]
-EXTENDED_DIGIT = [0-9a-zA-Z]
-INTEGER = ({DIGIT}(_?{DIGIT})*)
-EXPONENT = ([eE](\+?|-){INTEGER})
-DECIMAL_LITERAL = {INTEGER}(\.?{INTEGER})?{EXPONENT}?
-BASE = {INTEGER}
-BASED_INTEGER = {EXTENDED_DIGIT}(_?{EXTENDED_DIGIT})*
-BASED_LITERAL = {BASE}#{BASED_INTEGER}(\.{BASED_INTEGER})?#{EXPONENT}?
 
 LETTER_UPPERCASE = [A-Z]
 LETTER_LOWERCASE = [a-z]
@@ -30,13 +23,14 @@ IDENTIFIER = {IDENTIFIER_START}({IDENTIFIER_START}|{IDENTIFIER_EXTEND})*
 
 CRLF= \n|\r|\r\n
 WHITE_SPACE=[\ \t\f]
-FIRST_VALUE_CHARACTER=[^ \n\r\f\\] | "\\"{CRLF} | "\\".
-VALUE_CHARACTER=[^\n\r\f\\] | "\\"{CRLF} | "\\".
 END_OF_LINE_COMMENT=("--")[^\r\n]*
-KEY_CHARACTER=[^:=\ \n\r\t\f\\] | "\\"{CRLF} | "\\".
 
+QUOTATION_MARK=\"
+QUOTATION_MARK_PAIR={QUOTATION_MARK}{QUOTATION_MARK}
+STRING_ELEMENT={QUOTATION_MARK_PAIR}|[^\"]
+STRING_LITERAL={QUOTATION_MARK}{STRING_ELEMENT}*{QUOTATION_MARK}
 %%
-"abort"                                         { return AdaTypes.KEYWORD; }
+abort                                         { return AdaTypes.KEYWORD; }
 "abs"                                         { return AdaTypes.KEYWORD; }
 "abstract"                                         { return AdaTypes.KEYWORD; }
 "accept"                                         { return AdaTypes.KEYWORD; }
@@ -78,7 +72,7 @@ KEY_CHARACTER=[^:=\ \n\r\t\f\\] | "\\"{CRLF} | "\\".
 "or"                                         { return AdaTypes.KEYWORD; }
 "others"                                         { return AdaTypes.KEYWORD; }
 "out"                                         { return AdaTypes.KEYWORD; }
-"package"                                         { return AdaTypes.KEYWORD; }
+package                                         { return AdaTypes.KEYWORD; }
 "pragma"                                         { return AdaTypes.KEYWORD; }
 "private"                                         { return AdaTypes.KEYWORD; }
 "procedure"                                         { return AdaTypes.KEYWORD; }
@@ -105,6 +99,8 @@ KEY_CHARACTER=[^:=\ \n\r\t\f\\] | "\\"{CRLF} | "\\".
 "while"                                         { return AdaTypes.KEYWORD; }
 "with"                                         { return AdaTypes.KEYWORD; }
 "xor"                                         { return AdaTypes.KEYWORD; }
+
+{STRING_LITERAL}                                { return AdaTypes.STRING_LITERAL; }
 
 {END_OF_LINE_COMMENT}                           { return AdaTypes.COMMENT; }
 

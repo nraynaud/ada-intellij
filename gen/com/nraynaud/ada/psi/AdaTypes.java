@@ -15,6 +15,7 @@ public interface AdaTypes {
   IElementType IDENTIFIER = new AdaTokenType("IDENTIFIER");
   IElementType KEYWORD = new AdaTokenType("KEYWORD");
   IElementType OTHER = new AdaTokenType("OTHER");
+  IElementType STRING_LITERAL = new AdaTokenType("STRING_LITERAL");
 
   class Factory {
     public static PsiElement createElement(ASTNode node) {

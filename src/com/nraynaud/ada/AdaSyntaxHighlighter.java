@@ -17,6 +17,7 @@ public class AdaSyntaxHighlighter extends SyntaxHighlighterBase {
 
     private static final TextAttributesKey[] COMMENT_KEYS = new TextAttributesKey[]{createTextAttributesKey("ADA_COMMENT", DefaultLanguageHighlighterColors.LINE_COMMENT)};
     private static final TextAttributesKey[] KEYWORD_KEYS = new TextAttributesKey[]{createTextAttributesKey("ADA_KEYWORD", DefaultLanguageHighlighterColors.KEYWORD)};
+    private static final TextAttributesKey[] STRING_LITERAL = new TextAttributesKey[]{createTextAttributesKey("ADA_STRING", DefaultLanguageHighlighterColors.STRING)};
 
     @NotNull
     @Override
@@ -31,6 +32,8 @@ public class AdaSyntaxHighlighter extends SyntaxHighlighterBase {
             return COMMENT_KEYS;
         if (tokenType.equals(AdaTypes.KEYWORD))
             return KEYWORD_KEYS;
+        if (tokenType.equals(AdaTypes.STRING_LITERAL))
+            return STRING_LITERAL;
         return new TextAttributesKey[0];
     }
 }

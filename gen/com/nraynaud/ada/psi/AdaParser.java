@@ -61,13 +61,14 @@ public class AdaParser implements PsiParser {
   }
 
   /* ********************************************************** */
-  // KEYWORD|IDENTIFIER|OTHER
+  // KEYWORD|IDENTIFIER|STRING_LITERAL|OTHER
   public static boolean text(PsiBuilder builder_, int level_) {
     if (!recursion_guard_(builder_, level_, "text")) return false;
     boolean result_;
     Marker marker_ = enter_section_(builder_, level_, _NONE_, "<text>");
     result_ = consumeToken(builder_, KEYWORD);
     if (!result_) result_ = consumeToken(builder_, IDENTIFIER);
+    if (!result_) result_ = consumeToken(builder_, STRING_LITERAL);
     if (!result_) result_ = consumeToken(builder_, OTHER);
     exit_section_(builder_, level_, marker_, TEXT, result_, false, null);
     return result_;
