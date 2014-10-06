@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="11869d7d-9362-423f-9c20-c81fbe9a4945" name="Default" comment="">
+    <list default="true" id="11869d7d-9362-423f-9c20-c81fbe9a4945" name="Default" comment="added string literal recognition">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/nraynaud/ada/Ada.bnf" afterPath="$PROJECT_DIR$/src/com/nraynaud/ada/Ada.bnf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/nraynaud/ada/Ada.flex" afterPath="$PROJECT_DIR$/src/com/nraynaud/ada/Ada.flex" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/nraynaud/ada/AdaLexer.java" afterPath="$PROJECT_DIR$/src/com/nraynaud/ada/AdaLexer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen/com/nraynaud/ada/psi/AdaParser.java" afterPath="$PROJECT_DIR$/gen/com/nraynaud/ada/psi/AdaParser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/nraynaud/ada/AdaParserDefinition.java" afterPath="$PROJECT_DIR$/src/com/nraynaud/ada/AdaParserDefinition.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/nraynaud/ada/AdaSyntaxHighlighter.java" afterPath="$PROJECT_DIR$/src/com/nraynaud/ada/AdaSyntaxHighlighter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen/com/nraynaud/ada/psi/AdaTypes.java" afterPath="$PROJECT_DIR$/gen/com/nraynaud/ada/psi/AdaTypes.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -36,7 +35,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/nraynaud/ada/Ada.bnf">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
-              <caret line="19" column="43" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="43" />
+              <caret line="19" column="57" selection-start-line="19" selection-start-column="57" selection-end-line="19" selection-end-column="57" />
               <folding>
                 <element signature="e#1#481#0" expanded="true" />
               </folding>
@@ -47,8 +46,8 @@
       <file leaf-file-name="AdaTypes.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gen/com/nraynaud/ada/psi/AdaTypes.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="480">
-              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
+              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -59,16 +58,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720">
               <caret line="4" column="88" selection-start-line="4" selection-start-column="88" selection-end-line="4" selection-end-column="88" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AdaSyntaxHighlighterFactory.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/nraynaud/ada/AdaSyntaxHighlighterFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
-              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -97,21 +86,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AdaSyntaxHighlighter.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="AdaSyntaxHighlighter.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/nraynaud/ada/AdaSyntaxHighlighter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
-              <caret line="35" column="34" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
+            <state vertical-scroll-proportion="0.50098234" vertical-offset="0" max-vertical-offset="509">
+              <caret line="30" column="47" selection-start-line="30" selection-start-column="47" selection-end-line="30" selection-end-column="47" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Ada.flex" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Ada.flex" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/nraynaud/ada/Ada.flex">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3678161" vertical-offset="1263" max-vertical-offset="1785">
-              <caret line="97" column="44" selection-start-line="97" selection-start-column="44" selection-end-line="97" selection-end-column="44" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1308" max-vertical-offset="1830">
+              <caret line="114" column="0" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -120,8 +109,8 @@
       <file leaf-file-name="AdaLexer.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/nraynaud/ada/AdaLexer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="8839" max-vertical-offset="9735">
-              <caret line="600" column="16" selection-start-line="600" selection-start-column="16" selection-end-line="600" selection-end-column="16" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="8884" max-vertical-offset="9840">
+              <caret line="603" column="16" selection-start-line="603" selection-start-column="16" selection-end-line="603" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -165,9 +154,9 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/com/nraynaud/ada/AdaParserDefinition.java" />
-        <option value="$PROJECT_DIR$/src/com/nraynaud/ada/AdaSyntaxHighlighter.java" />
-        <option value="$PROJECT_DIR$/src/com/nraynaud/ada/Ada.bnf" />
         <option value="$PROJECT_DIR$/src/com/nraynaud/ada/Ada.flex" />
+        <option value="$PROJECT_DIR$/src/com/nraynaud/ada/Ada.bnf" />
+        <option value="$PROJECT_DIR$/src/com/nraynaud/ada/AdaSyntaxHighlighter.java" />
       </list>
     </option>
   </component>
@@ -480,7 +469,11 @@
       <created>1412626505014</created>
       <updated>1412626505014</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added string literal recognition">
+      <created>1412629504447</created>
+      <updated>1412629504447</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -528,7 +521,8 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="better git configuration, add workspace to gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="better git configuration, add workspace to gitignore" />
+    <MESSAGE value="added string literal recognition" />
+    <option name="LAST_COMMIT_MESSAGE" value="added string literal recognition" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -881,10 +875,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gen/com/nraynaud/ada/psi/AdaTypes.java">
+    <entry file="file://$PROJECT_DIR$/src/com/nraynaud/ada/AdaParserDefinition.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="480">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765">
+          <caret line="60" column="29" selection-start-line="60" selection-start-column="29" selection-end-line="60" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/nraynaud/ada/AdaLexer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="8884" max-vertical-offset="9840">
+          <caret line="603" column="16" selection-start-line="603" selection-start-column="16" selection-end-line="603" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/nraynaud/ada/Ada.flex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1308" max-vertical-offset="1830">
+          <caret line="114" column="0" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/nraynaud/ada/AdaSyntaxHighlighterFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22988506" vertical-offset="0" max-vertical-offset="522">
+          <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
           <folding />
         </state>
       </provider>
@@ -897,52 +915,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/nraynaud/ada/AdaParserDefinition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765">
-          <caret line="60" column="29" selection-start-line="60" selection-start-column="29" selection-end-line="60" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/nraynaud/ada/AdaSyntaxHighlighterFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/nraynaud/ada/AdaSyntaxHighlighter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
-          <caret line="35" column="34" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/nraynaud/ada/Ada.bnf">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
-          <caret line="19" column="43" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="43" />
+          <caret line="19" column="57" selection-start-line="19" selection-start-column="57" selection-end-line="19" selection-end-column="57" />
           <folding>
             <element signature="e#1#481#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/nraynaud/ada/AdaLexer.java">
+    <entry file="file://$PROJECT_DIR$/gen/com/nraynaud/ada/psi/AdaTypes.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="8839" max-vertical-offset="9735">
-          <caret line="600" column="16" selection-start-line="600" selection-start-column="16" selection-end-line="600" selection-end-column="16" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/nraynaud/ada/Ada.flex">
+    <entry file="file://$PROJECT_DIR$/src/com/nraynaud/ada/AdaSyntaxHighlighter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3678161" vertical-offset="1263" max-vertical-offset="1785">
-          <caret line="97" column="44" selection-start-line="97" selection-start-column="44" selection-end-line="97" selection-end-column="44" />
+        <state vertical-scroll-proportion="0.50098234" vertical-offset="0" max-vertical-offset="509">
+          <caret line="30" column="47" selection-start-line="30" selection-start-column="47" selection-end-line="30" selection-end-column="47" />
           <folding />
         </state>
       </provider>

@@ -10,6 +10,7 @@ public interface AdaTypes {
 
   IElementType TEXT = new AdaElementType("TEXT");
 
+  IElementType CHARACTER_LITERAL = new AdaTokenType("CHARACTER_LITERAL");
   IElementType COMMENT = new AdaTokenType("COMMENT");
   IElementType CRLF = new AdaTokenType("CRLF");
   IElementType IDENTIFIER = new AdaTokenType("IDENTIFIER");

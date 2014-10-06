@@ -32,7 +32,7 @@ public class AdaSyntaxHighlighter extends SyntaxHighlighterBase {
             return COMMENT_KEYS;
         if (tokenType.equals(AdaTypes.KEYWORD))
             return KEYWORD_KEYS;
-        if (tokenType.equals(AdaTypes.STRING_LITERAL))
+        if (tokenType.equals(AdaTypes.STRING_LITERAL) || tokenType.equals(AdaTypes.CHARACTER_LITERAL))
             return STRING_LITERAL;
         return new TextAttributesKey[0];
     }

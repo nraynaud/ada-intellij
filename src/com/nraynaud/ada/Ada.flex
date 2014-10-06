@@ -29,6 +29,9 @@ QUOTATION_MARK=\"
 QUOTATION_MARK_PAIR={QUOTATION_MARK}{QUOTATION_MARK}
 STRING_ELEMENT={QUOTATION_MARK_PAIR}|[^\"]
 STRING_LITERAL={QUOTATION_MARK}{STRING_ELEMENT}*{QUOTATION_MARK}
+
+APOSTROPHE='
+CHARACTER_LITERAL={APOSTROPHE}.{APOSTROPHE}
 %%
 abort                                         { return AdaTypes.KEYWORD; }
 "abs"                                         { return AdaTypes.KEYWORD; }
@@ -101,7 +104,7 @@ package                                         { return AdaTypes.KEYWORD; }
 "xor"                                         { return AdaTypes.KEYWORD; }
 
 {STRING_LITERAL}                                { return AdaTypes.STRING_LITERAL; }
-
+{CHARACTER_LITERAL}                             { return AdaTypes.CHARACTER_LITERAL; }
 {END_OF_LINE_COMMENT}                           { return AdaTypes.COMMENT; }
 
 {IDENTIFIER}                                    { return AdaTypes.IDENTIFIER; }
