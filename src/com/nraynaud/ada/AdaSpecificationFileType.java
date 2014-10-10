@@ -7,34 +7,34 @@ import org.jetbrains.annotations.Nullable;
 
 import javax.swing.*;
 
-public class GnatProjectFileType extends LanguageFileType {
-    public static final GnatProjectFileType INSTANCE = new GnatProjectFileType();
+public class AdaSpecificationFileType extends LanguageFileType {
+    public static final AdaSpecificationFileType INSTANCE = new AdaSpecificationFileType();
 
-    private GnatProjectFileType() {
+    private AdaSpecificationFileType() {
         super(AdaLanguage.INSTANCE);
     }
 
     @NotNull
     @Override
     public String getName() {
-        return "Gnat Project File";
+        return "Ada Spec file";
     }
 
     @NotNull
     @Override
     public String getDescription() {
-        return "Gnat Project manager File";
+        return "Ada Specification file";
     }
 
     @NotNull
     @Override
     public String getDefaultExtension() {
-        return "gpr";
+        return "ads";
     }
 
     @Nullable
     @Override
     public Icon getIcon() {
-        return IconLoader.getIcon("/com/nraynaud/ada/gprIcon.png");
+        return IconLoader.getIcon("/com/nraynaud/ada/adsIcon.png");
     }
 }

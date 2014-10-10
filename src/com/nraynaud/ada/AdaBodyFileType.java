@@ -1,39 +1,40 @@
 package com.nraynaud.ada;
 
 import com.intellij.openapi.fileTypes.LanguageFileType;
+import com.intellij.openapi.util.IconLoader;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 import javax.swing.*;
 
-public class AdaFileType extends LanguageFileType {
-    public static final AdaFileType INSTANCE = new AdaFileType();
+public class AdaBodyFileType extends LanguageFileType {
+    public static final AdaBodyFileType INSTANCE = new AdaBodyFileType();
 
-    private AdaFileType() {
+    private AdaBodyFileType() {
         super(AdaLanguage.INSTANCE);
     }
 
     @NotNull
     @Override
     public String getName() {
-        return "Ada file";
+        return "Ada Body file";
     }
 
     @NotNull
     @Override
     public String getDescription() {
-        return "Ada language file";
+        return "Ada Body file";
     }
 
     @NotNull
     @Override
     public String getDefaultExtension() {
-        return "ads";
+        return "adb";
     }
 
     @Nullable
     @Override
     public Icon getIcon() {
-        return null;
+        return IconLoader.getIcon("/com/nraynaud/ada/adbIcon.png");
     }
 }

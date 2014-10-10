@@ -4,8 +4,8 @@ package com.nraynaud.ada.psi;
 import com.intellij.extapi.psi.PsiFileBase;
 import com.intellij.openapi.fileTypes.FileType;
 import com.intellij.psi.FileViewProvider;
-import com.nraynaud.ada.AdaFileType;
 import com.nraynaud.ada.AdaLanguage;
+import com.nraynaud.ada.AdaSpecificationFileType;
 import org.jetbrains.annotations.NotNull;
 
 public class AdaFile extends PsiFileBase {
@@ -16,7 +16,7 @@ public class AdaFile extends PsiFileBase {
     @NotNull
     @Override
     public FileType getFileType() {
-        return AdaFileType.INSTANCE;
+        return AdaSpecificationFileType.INSTANCE;
     }
 
     @Override

@@ -10,8 +10,8 @@ public class AdaFileTypeFactory extends FileTypeFactory {
 
     @Override
     public void createFileTypes(@NotNull FileTypeConsumer fileTypeConsumer) {
-        fileTypeConsumer.consume(AdaFileType.INSTANCE, "ads");
-        fileTypeConsumer.consume(AdaFileType.INSTANCE, "adb");
+        fileTypeConsumer.consume(AdaSpecificationFileType.INSTANCE, "ads");
+        fileTypeConsumer.consume(AdaBodyFileType.INSTANCE, "adb");
         fileTypeConsumer.consume(GnatProjectFileType.INSTANCE, "gpr");
     }
 }
