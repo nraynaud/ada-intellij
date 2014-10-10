@@ -5,11 +5,12 @@ import com.intellij.psi.tree.IElementType;
 import com.intellij.psi.TokenType;
 import com.nraynaud.ada.psi.AdaTypes;
 %%
-%class AdaLexer
+%class GprLexer
 %implements FlexLexer
 %unicode
 %function advance
 %type IElementType
+
 DIGIT = [0-9]
 EXTENDED_DIGIT = [0-9a-zA-Z]
 INTEGER = ({DIGIT}(_?{DIGIT})*)
@@ -109,6 +110,11 @@ CHARACTER_LITERAL={APOSTROPHE}.{APOSTROPHE}
 "while"                                         { return AdaTypes.KEYWORD; }
 "with"                                          { return AdaTypes.KEYWORD; }
 "xor"                                           { return AdaTypes.KEYWORD; }
+
+// Gpr specific keywords http://docs.adacore.com/gprbuild-docs/html/gprbuild_ug.html#Project-Declaration
+"extends"                                       { return AdaTypes.KEYWORD; }
+"external"                                      { return AdaTypes.KEYWORD; }
+"project"                                       { return AdaTypes.KEYWORD; }
 
 {STRING_LITERAL}                                { return AdaTypes.STRING_LITERAL; }
 {CHARACTER_LITERAL}                             { return AdaTypes.CHARACTER_LITERAL; }

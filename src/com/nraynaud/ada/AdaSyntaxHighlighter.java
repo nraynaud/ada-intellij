@@ -1,6 +1,7 @@
 package com.nraynaud.ada;
 
 import com.intellij.lexer.FlexAdapter;
+import com.intellij.lexer.FlexLexer;
 import com.intellij.lexer.Lexer;
 import com.intellij.openapi.editor.DefaultLanguageHighlighterColors;
 import com.intellij.openapi.editor.colors.TextAttributesKey;
@@ -8,8 +9,6 @@ import com.intellij.openapi.fileTypes.SyntaxHighlighterBase;
 import com.intellij.psi.tree.IElementType;
 import com.nraynaud.ada.psi.AdaTypes;
 import org.jetbrains.annotations.NotNull;
-
-import java.io.Reader;
 
 import static com.intellij.openapi.editor.colors.TextAttributesKey.createTextAttributesKey;
 
@@ -19,11 +18,16 @@ public class AdaSyntaxHighlighter extends SyntaxHighlighterBase {
     private static final TextAttributesKey[] KEYWORD_KEYS = new TextAttributesKey[]{createTextAttributesKey("ADA_KEYWORD", DefaultLanguageHighlighterColors.KEYWORD)};
     private static final TextAttributesKey[] STRING_LITERAL = new TextAttributesKey[]{createTextAttributesKey("ADA_STRING", DefaultLanguageHighlighterColors.STRING)};
     private static final TextAttributesKey[] NUMERIC_LITERAL = new TextAttributesKey[]{createTextAttributesKey("ADA_NUMBER", DefaultLanguageHighlighterColors.NUMBER)};
+    private FlexLexer lexer;
+
+    public AdaSyntaxHighlighter(final FlexLexer lexer) {
+        this.lexer = lexer;
+    }
 
     @NotNull
     @Override
     public Lexer getHighlightingLexer() {
-        return new FlexAdapter(new AdaLexer((Reader) null));
+        return new FlexAdapter(lexer);
     }
 
     @NotNull
